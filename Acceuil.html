@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ensacars</title>
+</head>
+<body >
+    <header>
+        <img src="images/logo.png" alt="logo" width="250px" height="150px">
+
+    </header>
+    <hr color="#4d0601" size="2" align="center">
+    <!--nav bar -->
+    <nav>
+        <ul>
+            <li><a href="Acceuil.html" target="_self">Acceuil</a></li>
+            <li><a href="vehicules.html" target="_blank">Nos Vehicules</a></li>  
+            <li><a href="apropos.html" target="_blank">a propos</a></li>
+            <li><a href="Contact.html" target="_blank">Contactez-Nous</a></li>
+        </ul>
+    </nav>
+    <hr  color="#4d0601" size="2">
+    <!--trois voitures en suggestions-->
+    <main>
+        <h2>Les Suggestions:</h2>
+        <div>
+            <a href="vehicules.html#Audi" target="_blank"><img src="images/audirs3.png" alt="rs3" width="600" height="400" title="Tapez pour accéder"></a>
+            <h3><strong>Audi rs3 2025: </strong></h3>
+            <ul>
+                <li><strong>Carburant: </strong>Essence (super sans-plomb)</li>
+                <li><strong>Puissance: </strong>400 ch (294 kW)</li>
+                <li><strong>Transmission: </strong>boîte automatique (S Tronic) 7 rapports</li>
+                <li><strong>Vitesse maximal: </strong>250 km/h (limité électroniquement)</li>
+                <li><strong>Consommation: </strong>9,2-9,5 L / 100 km</li>
+            </ul>
+        </div>
+        <hr width="200" color="#4d0601" size="2" align="center">
+        <br>
+        <div>
+            <a href="vehicules.html#BMW" target="_blank"><img src="images/bmwm4.png" alt="m4" width="600" height="400" title="Tapez pour accéder"></a>
+            <h3><strong>BMW m3 competition 2025: </strong></h3>
+            <ul>
+                <li><strong>Carburant: </strong>Essence (super sans‐plomb)</li>
+                <li><strong>Puissance: </strong>543 ch (≈ 405 kW)</li>
+                <li><strong>Transmission: </strong>Boîte automatique 8 rapports (M Steptronic)</li>
+                <li><strong>Vitesse maximal: </strong>302 km/h (≈ 188 mph)</li>
+                <li><strong>Consommation: </strong>10,2 L/100km</li>
+            </ul>
+        </div>
+        <hr width="200" color="#4d0601" size="2" align="center">
+        <br>
+        <div>
+            <a href="vehicules.html#Mrecedes" target="_blank"><img src="images/mercedesg63.png" alt="g63" width="600" height="400" title="Tapez pour accéder"></a>
+            <h3><strong>Mercedez-AMG G63: </strong></h3>
+            <ul>
+                <li><strong>Carburant:</strong>Essence (super sans-plomb)</li>
+                <li><strong>Puissance: </strong>577 ch (≈430 kW)</li>
+                <li><strong>Transmission: </strong>Boîte automatique à 9 rapports + transmission intégrale permanente (AMG 4MATIC).</li>
+                <li><strong>Vitesse maximal: </strong>Limité électroniquement à environ 220-240 km/h selon version et options.</li>
+                <li><strong>Consommation: </strong>≈ 21,3 L/100 km</li>
+            </ul>
+        </div>
+    </main>
+    <hr  color="#4d0601" size="2" >
+    <!--la barre de recherche avec marque model...-->
+    <section>
+        <fieldset>
+            <legend>Acheter: </legend>
+            <form action="#">
+                <label for="marque">Marque: </label>
+                <select name="Marque" id="marque">
+                    <option value="">--choisir--</option>
+                </select>
+                <label for="Model">Model:</label>
+                <select name="model" id="model">
+                    <option value="">--choisir--</option>
+                </select>
+                <br><br>
+                <label for="Prixm">Prix max:</label>
+                <input type="number" id="prixm" placeholder="00000$">
+                <label for="Carburant">Carburant: </label>
+                <select name="Carburant" id="Carb">
+                    <option value="">--choisir--</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Chercher"></input>
+                <input type="reset" value="renitialiser">
+            </form>
+        </fieldset>
+    </section>
+    <!--les marques nous prend a la page des marques -->
+    <nav>
+        <h2>Les marques disponibles: </h2>
+        <ul>
+            <li><a href="marques.html#BMW" target="_blank">BMW</a></li>
+            <li><a href="marques.html#Mercedes" target="_blank">Mercedes-Benz</a></li>
+            <li><a href="marques.html#Audi" target="_blank">AUDi</a></li>
+            <li><a href="marques.html#Peugeot" target="_blank">Peugeot</a></li>
+            <li><a href="marques.html#Renault" target="_blank">Renault</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <hr size="2" color="#4d0601">
+        <p>&copy; 2025 EnsaCars — Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
