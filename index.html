@@ -106,19 +106,24 @@
                 iframe.style.height = event.data.height + "px";
             }
         });
-
+        
+        let countPanier= document.getElementById("countPanier");
+        let countPanierside= document.getElementById("countPanierside");
         // Compteur panier
         function updatePanierCount(panierid) {
             let panier = JSON.parse(localStorage.getItem("panier")) || [];
-            document.getElementById(panierid).textContent = panier.length;
+            panierid.textContent= panier.length;
         }
 
         // Mise à jour initiale
-        updatePanierCount("countPanier");
-        updatePanierCount("countPanierside");
+        updatePanierCount(countPanier);
+        updatePanierCount(countPanierside);
 
         // Vérification régulière si l'iframe ajoute des articles
-        setInterval(updatePanierCount, 500);
+        setInterval(() => {
+        updatePanierCount(countPanier);
+        updatePanierCount(countPanierside);
+        }, 500);
 
         function showsidebar(){
             const sidebar = document.querySelector('.sidebar');
