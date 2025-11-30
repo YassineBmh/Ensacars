@@ -49,7 +49,7 @@
             <a href="#" onclick="loadPage('pages/partenaires.html')">Partenaires</a>
             <a href="#" onclick="loadPage('pages/contact.html')">Contactez-nous</a>
             <a href="#" onclick="loadPage('pages/panier.html')">
-                🛒 Panier (<span id="countPanier">0</span>)
+                🛒 Panier (<span id="countPanierside">0</span>)
             </a>
         </nav>
     </div>
@@ -108,13 +108,14 @@
         });
 
         // Compteur panier
-        function updatePanierCount() {
+        function updatePanierCount(panierid) {
             let panier = JSON.parse(localStorage.getItem("panier")) || [];
-            document.getElementById("countPanier").textContent = panier.length;
+            document.getElementById(panierid).textContent = panier.length;
         }
 
         // Mise à jour initiale
-        updatePanierCount();
+        updatePanierCount("countPanier");
+        updatePanierCount("countPanierside");
 
         // Vérification régulière si l'iframe ajoute des articles
         setInterval(updatePanierCount, 500);
