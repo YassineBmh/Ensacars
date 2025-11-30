@@ -43,12 +43,12 @@
         <!--navbar on mobile vue-->
 
         <nav class="sidebar">
-            <a href="#" onclick="hidesidebar()"><i class="fa-solid fa-xmark"></i></a>
-            <a href="#" onclick="loadPage('pages/accueil.html')">Accueil</a>
-            <a href="#" onclick="loadPage('pages/a_propos.html')">A Propos</a>
-            <a href="#" onclick="loadPage('pages/partenaires.html')">Partenaires</a>
-            <a href="#" onclick="loadPage('pages/contact.html')">Contactez-nous</a>
-            <a href="#" onclick="loadPage('pages/panier.html')">
+            <a href="#" onclick="hidesidebar()" ><i class="fa-solid fa-xmark"></i></a>
+            <a href="#" onclick="loadPage('pages/accueil.html');hidesidebar()">Accueil</a>
+            <a href="#" onclick="loadPage('pages/a_propos.html');hidesidebar()">A Propos</a>
+            <a href="#" onclick="loadPage('pages/partenaires.html');hidesidebar()">Partenaires</a>
+            <a href="#" onclick="loadPage('pages/contact.html');hidesidebar()">Contactez-nous</a>
+            <a href="#" onclick="loadPage('pages/panier.html');hidesidebar()">
                 🛒 Panier (<span id="countPanierside">0</span>)
             </a>
         </nav>
